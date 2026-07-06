@@ -83,7 +83,7 @@ Module: {request.module}
 Feature: {request.feature}
 User Story: {request.user_story}
 Test Types needed: {types_str}
-Generate 3-5 test cases per type requested. Return as a JSON array only."""
+Generate 9-15 test cases per type requested. Return as a JSON array only."""
     try:
         client = get_client()
         response = client.chat.completions.create(

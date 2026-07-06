@@ -33,7 +33,7 @@ app.include_router(testcases.router, prefix="/api/testcases", tags=["Test Cases"
 app.include_router(automation.router, prefix="/api/automation", tags=["Automation"])
 app.include_router(bugreports.router, prefix="/api/bugreports", tags=["Bug Reports"])
 
-@app.get("/")
+@app.api_route("/", methods=["GET", "HEAD"])
 def root():
     key = os.getenv("GROQ_API_KEY")
     return {

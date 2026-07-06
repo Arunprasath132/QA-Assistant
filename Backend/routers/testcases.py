@@ -252,7 +252,7 @@ Each object must have: id, title, type, steps, expected, priority.
 - expected: expected result
 - priority: High/Medium/Low
 
-Generate 8-12 test cases based on what you see in the screenshot."""
+Generate 8-20 test cases based on what you see in the screenshot."""
 
     try:
         client = get_client()
